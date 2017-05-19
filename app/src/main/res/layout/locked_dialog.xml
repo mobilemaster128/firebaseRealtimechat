@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey_500"
+        android:layout_margin="@dimen/margin_huger"
+        android:hint="Code"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/grey_300"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/unlock_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_avg"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_huge"
+        android:paddingRight="@dimen/padding_huge"
+        android:textAllCaps="false"
+        android:text="Unlock App"
+        android:textSize="16sp"
+        android:textColor="@color/grey_100"
+        android:background="@drawable/lock_button_bg"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/forgot_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_small"
+        android:layout_marginTop="@dimen/margin_big"
+        android:textAllCaps="false"
+        android:text="Forgot Code"
+        android:textSize="16sp"
+        android:textColor="@color/grey_100"
+        android:background="@drawable/lock_button_bg"
+        app:layout_constraintTop_toBottomOf="@+id/unlock_button"
+        app:layout_constraintLeft_toLeftOf="@+id/unlock_button"
+        app:layout_constraintRight_toRightOf="@+id/unlock_button" />
+
+</android.support.constraint.ConstraintLayout>

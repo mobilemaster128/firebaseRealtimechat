@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/padding_avg"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_100"
+        android:textColorHint="@color/grey_500"
+        android:padding="@dimen/padding_small"
+        android:textSize="24sp"
+        android:text="Title"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_avg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_100"
+        android:textColorHint="@color/grey_500"
+        android:padding="@dimen/padding_small"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/margin_micro"
+        android:text="message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/grey_100"
+        android:layout_marginBottom="@dimen/margin_big"
+        android:layout_marginLeft="@dimen/margin_avg"
+        android:layout_marginRight="@dimen/margin_avg"
+        android:layout_marginTop="@dimen/margin_big"
+        android:text="Cancel"
+        android:padding="@dimen/padding_small"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:background="@drawable/lock_button_bg"
+        app:layout_constraintRight_toLeftOf="@+id/ok_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_message"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/grey_100"
+        android:layout_marginBottom="@dimen/margin_big"
+        android:layout_marginLeft="@dimen/margin_avg"
+        android:layout_marginRight="@dimen/margin_avg"
+        android:layout_marginTop="@dimen/margin_big"
+        android:text="Ok"
+        android:padding="@dimen/padding_small"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:background="@drawable/lock_button_bg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/cancel_button"
+        app:layout_constraintTop_toBottomOf="@+id/text_message" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline3"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</android.support.constraint.ConstraintLayout>

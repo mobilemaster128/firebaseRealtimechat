@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_900">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/text_view_message"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/hear_rounded_rect_bg"
+        android:gravity="top"
+        android:padding="16dp"
+        android:inputType="textMultiLine"
+        android:layout_margin="@dimen/margin_min"
+        android:textColor="@color/grey_100"
+        android:text="Hear Message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        app:layout_constraintBottom_toTopOf="@+id/reply_button"
+        android:scrollbars="vertical" />
+    <Button
+        android:id="@+id/reply_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/grey_100"
+        android:text="Reply"
+        android:textSize="22sp"
+        android:layout_margin="@dimen/margin_min"
+        android:padding="0dp"
+        android:background="@drawable/resend_button_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/report_button"  />
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/grey_100"
+        android:text="Pass"
+        android:textSize="22sp"
+        android:layout_margin="@dimen/margin_min"
+        android:padding="0dp"
+        android:background="@drawable/resend_button_bg"
+        app:layout_constraintLeft_toRightOf="@+id/report_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <Button
+        android:id="@+id/report_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/grey_100"
+        android:text="Report"
+        android:textSize="22sp"
+        android:layout_margin="@dimen/margin_min"
+        android:padding="0dp"
+        android:background="@drawable/resend_button_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/delete_button"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

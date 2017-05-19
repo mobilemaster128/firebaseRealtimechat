@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/grey_900</item>
+        <item name="colorPrimaryDark">@color/grey_800</item>
+        <item name="colorAccent">@color/grey_500</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Splash">
+        <item name="colorPrimary">@color/grey_900</item>
+        <item name="colorPrimaryDark">@color/grey_800</item>
+        <item name="colorAccent">@color/grey_500</item>
+        <item name="android:windowBackground">@color/colorAccent</item>
+    </style>
+
+    <style name="MessageTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">0dp</item>
+        <item name="tabPaddingEnd">0dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/MessageTabTextAppearance</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="MessageTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyAlertDialogTheme" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/grey_900</item>
+        <item name="colorPrimaryDark">@color/grey_300</item>
+        <item name="colorAccent">@color/grey_300</item>
+    </style>
+
+    <style name="LockDialogTheme">
+        <item name="colorPrimary">@color/grey_100</item>
+        <item name="colorPrimaryDark">@color/grey_100</item>
+        <item name="colorAccent">@color/grey_100</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/grey_900</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/grey_900</item>
+        <item name="android:textColor">@color/grey_100</item>
+        <item name="android:textColorPrimary">@color/grey_100</item>
+        <item name="colorAccent">@color/grey_100</item>
+        <item name="colorPrimaryDark">@color/grey_900</item>
+        <item name="android:background">@color/grey_900</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorAccent">@color/grey_500</item>
+        <item name="colorPrimaryDark">@color/grey_100</item>
+    </style>
+</resources>

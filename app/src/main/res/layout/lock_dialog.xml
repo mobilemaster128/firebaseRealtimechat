@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/padding_avg"
+    android:background="@color/black">
+
+    <ImageButton
+        android:id="@+id/cancel_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_close"
+        android:text="Cancel"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/padding_min"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/grey_100"
+        android:textColorHint="@color/grey_500"
+        android:padding="@dimen/padding_small"
+        android:layout_margin="@dimen/margin_avg"
+        android:hint="Code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancel_button" />
+
+    <EditText
+        android:id="@+id/edit_text_confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/grey_100"
+        android:textColorHint="@color/grey_500"
+        android:padding="@dimen/padding_small"
+        android:layout_margin="@dimen/margin_avg"
+        android:hint="Reconfirm Code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_password" />
+
+    <Button
+        android:id="@+id/lock_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/grey_100"
+        android:layout_margin="@dimen/margin_avg"
+        android:text="Lock App"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="@drawable/lock_button_bg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_confirm" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/whisper_fragment"
+    tools:context="com.anonymous.messaging.fragments.HearFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_all_whisper_listing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager" />
+
+    <TextView
+        android:id="@+id/text_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:hint="You don't have any whispers yet,\nbut soon enough we will\nsend you some. Stay tuned!" />
+
+</FrameLayout>
